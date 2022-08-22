@@ -100,8 +100,11 @@ reverse proxy:
 In app make env variable persistent:
 - The variable must be written in the .bashrc file in the home/ubuntu folder where .bashrc is located
 - ls -a 
-- sudo nano .bashrc > DB_HOST=mongodb://IPv4_db_ip/27017/posts
-- set up env variable: export DB_HOST=mongodb://IPv4_db_ip/27017/posts printenv DB_HOST
+- sudo nano .bashrc > DB_HOST=mongodb://IPv4_db_ip:27017/posts
+- set up env variable: export DB_HOST=mongodb://IPv4_db_ip:27017/posts printenv DB_HOST
+
+ ![image](https://user-images.githubusercontent.com/104793540/185964479-1fe23386-1306-4e66-829f-c706993c2af0.png)
+
 ### db user data setup
 
 ```
