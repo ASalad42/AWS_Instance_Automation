@@ -98,7 +98,7 @@ reverse proxy:
 - proxy_pass http://localhost:3000;
 
 In app make env variable persistent:
-- The variable must be written in the .bashrc file in the home fodler
+- The variable must be written in the .bashrc file in the home/ubuntu folder where .bashrc is located
 - ls -a 
 - sudo nano .bashrc > DB_HOST=mongodb://IPv4_db_ip/27017/posts
 - set up env variable: export DB_HOST=mongodb://IPv4_db_ip/27017/posts printenv DB_HOST
