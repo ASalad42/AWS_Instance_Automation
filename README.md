@@ -80,6 +80,16 @@ sudo apt-get upgrade -y
 
 ```
 
+![image](https://user-images.githubusercontent.com/104793540/185957058-d3974c8c-3635-4662-83d9-c49c78a55b92.png)
+![image](https://user-images.githubusercontent.com/104793540/185957163-829c610e-9c2e-420f-9616-f7a1ed1764d5.png)
+
+migrating files from local host to instance:
+- in local terminal run > scp -i ~/.ssh/eng122.pem -r /c/Users/Ayan/aws ubuntu@ec2-34-247-162-174.eu-west-1.compute.amazonaws.com: (ensure correct public ip4 dns for your instance and keyname&file path) 
+
+![image](https://user-images.githubusercontent.com/104793540/185958290-5b377268-ed10-4159-8e04-4ca7bf605139.png)
+
+![image](https://user-images.githubusercontent.com/104793540/185958201-b392dc2d-b9b9-4f87-a369-54e8a350b8dd.png)
+
 reverse proxy:
 - cd /etc
 - cd nginx
