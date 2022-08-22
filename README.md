@@ -106,6 +106,8 @@ sudo systemctl enable  mongod
 sudo systemctl status  mongod
 ```
 
+- include app ip in security group for port 27017
+- 
 ### app ami 
 
 
