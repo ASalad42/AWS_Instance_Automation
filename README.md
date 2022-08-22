@@ -140,6 +140,14 @@ sudo systemctl status  mongod
 
 ![image](https://user-images.githubusercontent.com/104793540/185965436-cd4ceb13-6e1d-4bc2-b567-55bd4c0cc657.png)
 
+back in app:
+- a
+- restart nginx 
+- enable nginx 
+- refresh browser
+
+![image](https://user-images.githubusercontent.com/104793540/185966575-53107b71-69f3-4d58-ac35-f02256053637.png)
+
 ### app ami 
 
 
