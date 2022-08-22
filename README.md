@@ -141,7 +141,10 @@ sudo systemctl status  mongod
 ![image](https://user-images.githubusercontent.com/104793540/185965436-cd4ceb13-6e1d-4bc2-b567-55bd4c0cc657.png)
 
 back in app:
-- a
+- Go to app > seeds
+- sudo node seed.js
+- cd ..
+- npm start 
 - restart nginx 
 - enable nginx 
 - refresh browser
