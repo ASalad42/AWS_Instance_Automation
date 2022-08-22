@@ -80,6 +80,18 @@ sudo apt-get upgrade -y
 
 ```
 
+reverse proxy:
+- cd /etc
+- cd nginx
+- cd sites-available
+- sudo nano default
+- proxy_pass http://localhost:3000;
+
+In app make env variable persistent:
+- The variable must be written in the .bashrc file in the home fodler
+- ls -a 
+- sudo nano .bashrc > DB_HOST=mongodb://IPv4_db_ip/27017/posts
+- set up env variable: export DB_HOST=mongodb://IPv4_db_ip/27017/posts printenv DB_HOST
 ### db user data setup
 
 ```
@@ -107,7 +119,11 @@ sudo systemctl status  mongod
 ```
 
 - include app ip in security group for port 27017
-- 
+- edit mongodb file
+- cd /etc
+- sudo nano mongod.conf
+- go to network interfaces change to 0.0.0.0 - cant do this in production
+- sudo systemctl restart mongod sudo systemctl enable mongod sudo systemctl status mongocd
 ### app ami 
 
 
