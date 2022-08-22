@@ -36,6 +36,14 @@ On AWS
 ![image](https://user-images.githubusercontent.com/104793540/185449473-00a7ee80-6b8e-45bf-8927-e225cf9b9d1a.png)
 ![image](https://user-images.githubusercontent.com/104793540/185449540-1719ba44-196f-43bd-8133-2a125f4855c6.png)
 ![image](https://user-images.githubusercontent.com/104793540/185449680-eac82c52-9d6b-414d-a116-6f4ad38e186e.png)
- scripting - 
- Review and Launch 
  </div>
+ 
+  scripting 
+  
+ - `#!/bin/bash`
+ - `sudo apt-get update`
+ - `sudo apt-get upgrade`
+ - `sudo systemctl install nginx`
+ - 
+ Review and Launch 
+ 
