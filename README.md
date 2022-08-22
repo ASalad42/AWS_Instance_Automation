@@ -137,6 +137,9 @@ sudo systemctl status  mongod
 - sudo nano mongod.conf
 - go to network interfaces change to 0.0.0.0 - cant do this in production
 - sudo systemctl restart mongod sudo systemctl enable mongod sudo systemctl status mongocd
+
+![image](https://user-images.githubusercontent.com/104793540/185965436-cd4ceb13-6e1d-4bc2-b567-55bd4c0cc657.png)
+
 ### app ami 
 
 
