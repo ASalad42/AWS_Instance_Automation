@@ -88,6 +88,26 @@ migrating files from local host to instance:
 
 - git clone is better and faster - REDO
 
+```
+#!/bin/bash
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo systemctl restart nginx -y
+
+sudo systemctl enable nginx
+
+git clone https://github.com/ASalad42/deployment.git
+
+cd deployment
+
+sudo chmod +x provision.sh
+
+sudo ./provision.sh
+
+```
 ![image](https://user-images.githubusercontent.com/104793540/185958290-5b377268-ed10-4159-8e04-4ca7bf605139.png)
 
 ![image](https://user-images.githubusercontent.com/104793540/185958201-b392dc2d-b9b9-4f87-a369-54e8a350b8dd.png)
