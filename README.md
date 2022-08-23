@@ -117,6 +117,11 @@ In app make env variable persistent:
 
  ![image](https://user-images.githubusercontent.com/104793540/185964479-1fe23386-1306-4e66-829f-c706993c2af0.png)
 
+debugging node seed.js > seeded and cleared messages not appearing fix:
+- a
+- b
+- c
+
 ### db user data setup
 
 ```
