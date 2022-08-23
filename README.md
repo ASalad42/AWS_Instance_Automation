@@ -92,26 +92,7 @@ migrating files from local host to instance:
 
 - git clone is better and faster - REDO
 
-```
-#!/bin/bash
 
-sudo apt-get update -y
-
-sudo apt-get upgrade -y
-
-sudo systemctl restart nginx -y
-
-sudo systemctl enable nginx
-
-git clone https://github.com/ASalad42/deployment.git
-
-cd deployment
-
-sudo chmod +x provision.sh
-
-sudo ./provision.sh
-
-```
 - ssh into app ec2
 - cd app
 - npm install
@@ -186,5 +167,43 @@ back in app:
 
 ![image](https://user-images.githubusercontent.com/104793540/186126863-a7cebc3b-99af-4cf7-8783-7702880bc7a5.png)
 
+```
+#!/bin/bash
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+
+sudo systemctl restart nginx -y
+
+sudo systemctl enable nginx
+
+git clone https://github.com/ASalad42/deployment.git
+
+cd deployment
+
+sudo chmod +x provision.sh
+
+sudo ./provision.sh
+
+```
+
+- ssh into app ec2
+- cd app
+- npm install
+- npm start
 
 ### db ami 
+
+```
+#!/bin/bash
+
+sudo apt-get update -y
+
+sudo apt-get upgrade -y
+sudo systemctl restart mongod
+
+sudo systemctl enable  mongod
+
+sudo systemctl status  mongod
+```
