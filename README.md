@@ -72,6 +72,10 @@ sudo apt-get install -y nodejs
 
 sudo apt-get install -y npm
 
+npm install express -y
+
+npm install mongoose -y
+
 sudo npm install pm2 -g
 
 sudo apt-get update -y
