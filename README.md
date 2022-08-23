@@ -133,7 +133,7 @@ sudo systemctl enable  mongod
 sudo systemctl status  mongod
 ```
 
-- include app ip in security group for port 27017
+- include app private ipv4 in security group for port 27017
 - edit mongodb file
 - cd /etc
 - sudo nano mongod.conf
