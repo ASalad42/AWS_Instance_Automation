@@ -187,6 +187,10 @@ sudo chmod +x provision.sh
 sudo ./provision.sh
 
 ```
+check installed of:
+- nodejs -v
+- npm -v
+
 
 - ssh into app ec2
 - cd app
