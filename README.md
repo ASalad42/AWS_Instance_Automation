@@ -108,6 +108,11 @@ sudo chmod +x provision.sh
 sudo ./provision.sh
 
 ```
+- ssh into app ec2
+- cd app
+- npm install
+- npm start
+
 ![image](https://user-images.githubusercontent.com/104793540/185958290-5b377268-ed10-4159-8e04-4ca7bf605139.png)
 
 ![image](https://user-images.githubusercontent.com/104793540/185958201-b392dc2d-b9b9-4f87-a369-54e8a350b8dd.png)
@@ -175,6 +180,7 @@ back in app:
 
 ### app ami 
 
+![image](https://user-images.githubusercontent.com/104793540/186126863-a7cebc3b-99af-4cf7-8783-7702880bc7a5.png)
 
 
 ### db ami 
