@@ -58,9 +58,9 @@ sudo apt-get update -y
 
 sudo apt-get upgrade -y
 
-sudo systemctl install nginx -y
+sudo apt-get install nginx -y
 
-sudo systemctl start nginx 
+sudo systemctl start ngninx 
 
 sudo systemctl enable nginx
 
