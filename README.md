@@ -54,31 +54,14 @@ On AWS
 ```
 #!/bin/bash
 
-sudo apt-get update -y
-
-sudo apt-get upgrade -y
-
-sudo apt-get install nginx -y
-
+sudo apt install nginx -y
 sudo systemctl enable nginx
+sudo systemctl start nginx
 
 sudo apt-get purge nodejs npm
-
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-
 sudo apt-get install -y nodejs
-
-sudo apt install npm -y
-
-npm install express -y
-
-npm install mongoose -y
-
-sudo npm install pm2 -g
-
-sudo apt-get update -y
-
-sudo apt-get upgrade -y
+sudo apt-get install npm -y
 
 ```
 
@@ -89,10 +72,11 @@ migrating files from local host to instance:
 - in local terminal run > scp -i ~/.ssh/eng122.pem -r /c/Users/Ayan/aws ubuntu@ec2-34-247-162-174.eu-west-1.compute.amazonaws.com: (ensure correct public ip4 dns for your instance and keyname&file path) 
 
 - git clone is better and faster - REDO
-
-
 - ssh into app ec2
 - cd app
+- sudo apt install npm
+- npm install express -y
+- npm install mongoose -y
 - npm install
 - npm start
 
@@ -106,19 +90,22 @@ reverse proxy:
 - cd sites-available
 - sudo nano default
 - proxy_pass http://localhost:3000;
+- sudo systemctl restart nginx
+- cd app 
+- npm start
 
 In app make env variable persistent:
 - The variable must be written in the .bashrc file in the home/ubuntu folder where .bashrc is located
 - ls -a 
-- sudo nano .bashrc > DB_HOST=mongodb://IPv4_db_ip:27017/posts
-- set up env variable: export DB_HOST=mongodb://IPv4_db_ip:27017/posts printenv DB_HOST
+- sudo nano .bashrc > export DB_HOST=mongodb://IPv4_db_ip:27017/posts (public db up)
+- set up env variable: export DB_HOST=mongodb://IPv4_db_ip:27017/posts then printenv DB_HOST
+- cd app
+- cd seeds
+- node seed.js
+- npm start
 
  ![image](https://user-images.githubusercontent.com/104793540/185964479-1fe23386-1306-4e66-829f-c706993c2af0.png)
 
-debugging node seed.js > seeded and cleared messages not appearing fix:
-- a
-- b
-- c
 
 ### db user data setup
 
@@ -155,14 +142,7 @@ sudo systemctl status  mongod
 
 ![image](https://user-images.githubusercontent.com/104793540/185965436-cd4ceb13-6e1d-4bc2-b567-55bd4c0cc657.png)
 
-back in app:
-- Go to app > seeds
-- sudo node seed.js
-- cd ..
-- npm start 
-- restart nginx 
-- enable nginx 
-- refresh browser
+
 
 ![image](https://user-images.githubusercontent.com/104793540/185966575-53107b71-69f3-4d58-ac35-f02256053637.png)
 
@@ -190,15 +170,6 @@ sudo chmod +x provision.sh
 sudo ./provision.sh
 
 ```
-check installed of:
-- nodejs -v
-- npm -v
-
-
-- ssh into app ec2
-- cd app
-- npm install
-- npm start
 
 ### db ami 
 
