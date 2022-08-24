@@ -43,7 +43,7 @@ On AWS
  - `#!/bin/bash`
  - `sudo apt-get update`
  - `sudo apt-get upgrade`
- - `sudo systemctl install nginx`
+ - `sudo apt install nginx –y`
  - 
  Review and Launch 
  
@@ -60,8 +60,6 @@ sudo apt-get upgrade -y
 
 sudo apt-get install nginx -y
 
-sudo systemctl start ngninx 
-
 sudo systemctl enable nginx
 
 sudo apt-get purge nodejs npm
@@ -70,7 +68,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 
-sudo apt-get install -y npm
+sudo apt install npm -y
 
 npm install express -y
 
