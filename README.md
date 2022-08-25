@@ -76,8 +76,9 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 sudo apt install nginx -y
+sudo systemctl restart nginx
 sudo systemctl enable nginx
-sudo systemctl start nginx
+
 
 sudo apt-get purge nodejs npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
