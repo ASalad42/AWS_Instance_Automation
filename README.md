@@ -54,6 +54,27 @@ On AWS
 ```
 #!/bin/bash
 
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+sudo apt install nginx -y
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+
+sudo apt-get purge nodejs npm
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install npm -y
+
+```
+
+```
+#!/bin/bash
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
 sudo apt install nginx -y
 sudo systemctl enable nginx
 sudo systemctl start nginx
@@ -62,6 +83,10 @@ sudo apt-get purge nodejs npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install npm -y
+
+sudo apt install npm
+npm install express -y
+npm install mongoose -y
 
 ```
 
