@@ -197,6 +197,31 @@ sudo ./provision.sh
 
 ```
 
+new attempt 
+
+```
+#!/bin/bash
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+sudo apt-get install nginx -y
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+sudo apt-get purge nodejs npm
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+cd deployment 
+cd app
+sudo apt-get install npm -y
+sudo apt install npm -y
+npm install express -y
+npm install mongoose -y
+npm install
+npm start -d
+```
 ### db ami 
 
 ```
