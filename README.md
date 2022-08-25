@@ -85,7 +85,7 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install npm -y
 
-sudo apt install npm
+sudo apt install npm -y
 npm install express -y
 npm install mongoose -y
 
