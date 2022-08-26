@@ -69,27 +69,7 @@ sudo apt-get install npm -y
 
 ```
 
-```
-#!/bin/bash
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
-
-sudo apt install nginx -y
-sudo systemctl restart nginx
-sudo systemctl enable nginx
-
-
-sudo apt-get purge nodejs npm
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo apt-get install npm -y
-
-sudo apt install npm -y
-npm install express -y
-npm install mongoose -y
-
-```
 
 ![image](https://user-images.githubusercontent.com/104793540/185957058-d3974c8c-3635-4662-83d9-c49c78a55b92.png)
 ![image](https://user-images.githubusercontent.com/104793540/185957163-829c610e-9c2e-420f-9616-f7a1ed1764d5.png)
@@ -197,31 +177,6 @@ sudo ./provision.sh
 
 ```
 
-new attempt 
-
-```
-#!/bin/bash
-
-sudo apt-get update -y
-sudo apt-get upgrade -y
-
-sudo apt-get install nginx -y
-sudo systemctl restart nginx
-sudo systemctl enable nginx
-
-sudo apt-get purge nodejs npm
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-cd deployment 
-cd app
-sudo apt-get install npm -y
-sudo apt install npm -y
-npm install express -y
-npm install mongoose -y
-npm install
-npm start -d
-```
 ### db ami 
 
 ```
